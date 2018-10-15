@@ -1,0 +1,102 @@
+<div class="ui fixed top menu">
+
+    <a href="/homie_rael/dashboard" data-toggle="slide" class="item">
+        <h3>HOMIE</h3>
+    </a>
+    <div class="menu right">
+        <a class="icon item pointer" data-toggle="popup" data-content="#mail" data-position="bottom right"></a>
+        <div id="mail" class="ui fluid popup" style="min-width:400px;padding-top:30px;">
+        </div>
+        <a class="icon item pointer" data-toggle="popup" data-content="#notif" data-position="bottom right">
+            <i class="bell icon"></i>
+        </a>
+        <div id="notif" class="ui fluid popup" style="min-width:400px;padding-top:30px;">
+            <div class="ui divided items">
+                <div class="item">
+                    <div class="content">
+                        <i class="bell icon"></i> Illum ratione aliquam veniam voluptates porro,
+                        <div class="extra content">
+                            Sunday, 20-03-2016
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <i class="bell icon"></i> Facere, quas maxime at consequuntur
+                        <div class="extra content">
+                            Sunday, 20-03-2016
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <i class="bell icon"></i> Officiis ex sint distinctio.
+                        <div class="extra content">
+                            Sunday, 20-03-2016
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui divider"></div>
+            <a href="" class="ui right floated tiny button">All Notification</a>
+        </div>
+        <a class="icon item pointer" data-toggle="popup" data-content="#user" data-position="bottom right">
+            <img src="/homie_rael/uploads/{USUARIO_ID}.jpg" class="ui avatar image" alt="">
+        </a>
+        <div id="user" class="ui popup">
+            <div class="ui secondary vertical menu">
+                <div class="header item">USER MENU</div>
+                <a href="" class="item">Profile
+                    <i class="user icon"></i>
+                </a>
+                <a href="" class="item">Groups
+                    <i class="users icon"></i>
+                </a>
+                <a href="" class="item">Settings
+                    <i class="settings icon"></i>
+                </a>
+                <div class="ui divider"></div>
+                <a href="index.html" class="item">Logout
+                    <i class="sign out icon"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pusher">
+    <div class="ui fluid container">
+        <div class="ui two column grid">
+            <div class="side menu" id="sideMenu">
+                <div align="center" class="profile">
+                    <br>
+                    <a href="">
+                        <img src="/homie_rael/uploads/{USUARIO_ID}.jpg" alt="{USUARIO_NOME}" class="ui circular image" width="150px">
+                    </a>
+                    <div class="ui white header">{USUARIO_NOME}</div>
+                    <div class="ui divider"></div>
+                </div>
+                <div class="ui fluid vertical menu" id="verticalMenu" style="overflow:hidden;">
+                    <a href="/homie_rael/dashboard" class="item">
+                        <i class=""></i>
+                        <span>Início</span>
+                    </a>
+                    <a href="/homie_rael/dashboard/meusimoveis/" class="item">
+                        <i class=""></i>
+                        <span>Meus imoveis</span>
+                    </a>
+                    <a href="/homie_rael/dashboard/usuario/editar/{USUARIO_ID}" class="item">
+                        <i class=""></i>
+                        <span>Editar perfil</span>
+                    </a>
+                    <a href="/homie_rael/login" class="item">
+                        <i class=""></i>
+                        <span>Sair</span>
+                    </a>
+                </div>
+            </div>
+            <div class="sixteen wide column" id="content">
+                {CONTEUDO_DASHBOARD}
+            </div>
+        </div>
+    </div>
+</div>

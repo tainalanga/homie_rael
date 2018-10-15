@@ -1,0 +1,85 @@
+<div class="ui middle aligned center aligned grid">
+    <div class="column">
+        <h2 class="ui teal image header" style="color: black;">
+            <div class="content">
+                Cadastre-se
+            </div>
+        </h2>
+        <form class="ui large form" method="POST" enctype="multipart/form-data">
+            <!-- BEGIN BLOCK_MESSAGE -->
+            {MESSAGE}
+            <!-- END BLOCK_MESSAGE -->
+            <div class="ui stacked segment">
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class="user icon"></i><input name="Nome" placeholder="Nome" type="text" />
+                    </div>
+                </div>
+                <!-- <div class="field">
+                    <div class="ui left icon input">
+                        <i class="user icon"></i><input name="Estado" placeholder="Estado" type="text"/>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class="user icon"></i><input name="Cidade de origem" placeholder="Cidade de Origem" type="text" />
+                    </div>
+                </div> -->
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class="user icon"></i><input name="Data de nascimento" placeholder="Data de nascimento" type="date" />
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class="user icon"></i><input name="Email" placeholder="E-mail" type="text" />
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class="user icon"></i><input name="Telefone" placeholder="Telefone" type="text" />
+                    </div>
+                </div>
+                <div class="field">
+                    <select class="ui dropdown" name="Genero">
+                        <option value="">Gênero</option>
+                        <option value="Mascúlino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                    </select>
+                </div>                    
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class="lock icon"></i><input name="Senha" placeholder="Senha" type="password" />
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class="user icon"></i><input name="Confirmar senha" placeholder="Confirmar Senha" type="password" />
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Preferências</label>
+                    <textarea name="Preferencias" placeholder="Caso seja um locador descreva como você gostaria que fosse a pessoa que locasse seu imóvel, caso seja um locatário descreva como gostaria que fosse seu parceiro e o seu perfil."></textarea>
+                </div>
+                <div class="field">
+                    <div class="four wide field">
+                        Fotos
+                        <input type="file" name="Foto de Perfil">            
+                    </div>
+                </div>
+                <button type="submit" class="ui fluid large teal submit button">
+                    Cadastrar
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+<style type="text/css">
+    body {
+        background-color: #DADADA;
+    }
+
+    .column {
+        max-width: 450px;
+    }
+</style>

@@ -1,0 +1,65 @@
+<!-- BEGIN BLOCK_MESSAGE -->
+{MESSAGE}
+<!-- END BLOCK_MESSAGE -->
+
+<div class="ui segments">
+        <div class="ui segment">
+          <p>Sobre o Imovel</p>
+        </div>
+        <div class="ui segments">
+          <div class="ui segment">
+            <p>Endereço : {ENDERECO}</p>
+          </div>
+          <div class="ui segment">
+            <p>Numero : {NUMERO}</p>
+          </div>
+          <div class="ui segment">
+            <p>Tem espaco para : {LIMITE_PESSOAS} pessoas</p>
+          </div>
+          <div class="ui segment">
+                <p>O imovel eh um(a): {TIPO}</p>
+            </div>
+          <div class="ui segment">
+              <p>Perto da universidade: {UNIVERSIDADE}</p>
+          </div>
+        </div>
+
+        <div class="ui segment">
+          <p>informações sobre o Dono para conato</p>
+        </div>
+        <div class="ui segments">
+          <div class="ui segment">
+            <p>Nome : {DONO}</p>
+          </div>
+          <div class="ui segment">
+            <p>Email : {EMAIL}</p>
+          </div>
+          <div class="ui segment">
+            <p>Telefone : {TELEFONE}</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="ui segment">
+          <p>Informacoes Adicionais</p>
+          <div class="ui segment">
+                <p>Descricao : {DESCRICAO}</p>
+              </div>
+              <div class="ui segment">
+                    <p class="">Vagas Restantes : <label class="ui red header">{VAGAS}</label></p>
+                  </div>
+                <p>Fotos</p>
+                        <div class="ui segment">
+                                <p>(foto)</p>
+                              </div>
+        </div>
+        <form method='POST'>
+
+                <div class="ui horizontal segments"></div>
+                <div class="ui labeled button" tabindex="0">
+                        <input type="hidden" name="Usuario_id" value="{USRID}">
+                        <input type="hidden" name="Imovel_id" value="{ID}">
+                        <input type="submit" value="Tenho Interesse" class="ui positive button" onclick="window.alert('Voce demonstrou interesse neste imovel!');">
+                </div>
+        </form>
+           

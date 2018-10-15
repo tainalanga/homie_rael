@@ -1,0 +1,90 @@
+<!-- BEGIN BLOCK_MESSAGE -->
+{MESSAGE}
+<!-- END BLOCK_MESSAGE -->
+<form class="ui form"  enctype="multipart/form-data" method='POST'>
+    <div class="field">
+        <label>Endereço</label>
+        <div class="fields">
+            <div class="twelve wide field">
+                <input type="text" name="Endereço" placeholder="Endereço" value='{ENDERECO}'>
+            </div>
+            <div class="field">
+                    <select class="ui dropdown" name="Universidade">
+                        <option value="{UNIVERSIDADE}">Universidade</option>
+                        <option value="1">IFSC Campus Ararangua</option>
+                        <option value="2">IFSC Campus Caçador</option>
+                        <option value="3">	IFSC Campus Canoinhas</option>
+                        <option value="4">	IFSC Campus Chapecó</option>
+                        <option value="5">IFSC Campus Florianópolis Continente</option>
+                        <option value="6">IFSC Campus Criciúma</option>
+                        <option value="7">	IFSC Campus Florianópolis</option>
+                        <option value="8">IFSC Campus Garopaba</option>
+                        <option value="9">	IFSC Campus Gaspar</option>
+                        <option value="10">IFSC Campus Itajaí</option>
+                        <option value="11">IFSC Campus Jaraguá do Sul Centro</option>
+                        <option value="12">	IFSC Campus Jaraguá do Sul Rau</option>
+                        <option value="13">IFSC Campus Joinville</option>
+                        <option value="14">IFSC Campus Lages</option>
+                        <option value="15">IFSC Campus Palhoça</option>
+                        <option value="16">IFSC Campus São Carlos</option>
+                        <option value="17">IFSC Campus São José</option>
+                        <option value="18">	IFSC Campus São Lourenço do Oeste</option>
+                        <option value="19">	IFSC Campus São Miguel do Oeste</option>
+                        <option value="20">IFSC Campus Tubarão</option>
+                        <option value="21">	IFSC Campus Urupema</option>
+                        <option value="22">IFSC Campus Xanxerê</option>
+                        <option value="23">IFC Campus Abelardo Luz</option>
+                        <option value="24">IFC Campus Araquari</option>
+                        <option value="25">IFC Campus Blumenau</option>
+                        <option value="26">	IFC Campus Brusque</option>
+                        <option value="27">IFC Campus Camboriú</option>
+                        <option value="28">IFC Campus Concórdia</option>
+                         <option value="29">IFC Campus Fraiburgo</option>
+                        <option value="30">IFC Campus Ibirama</option>
+                        <option value="31">IFC Campus Luzerna</option>
+                        <option value="32">IFC Campus Rio do Sul</option>
+                        <option value="33">IFC Campus Santa Rosa do Sul</option>
+                        <option value="34">IFC Campus São Bento do Sul</option>
+                        <option value="35">IFC Campus São Francisco do Sul</option>
+                        <option value="36">IFC Campus Sombrio </option>
+                        <option value="37">IFC Campus Videira </option>
+                        <option value="38">UFSC Campus Florianópolis</option>
+                        <option value="39"><	UFSC Campus Araranguá/option>
+                        <option value="40">UFSC Campus Blumenau</option>
+                        <option value="41">UFSC Campus Curitibanos</option>
+                        <option value="42">UFSC Campus Joinville</option>
+
+                    </select>
+                </div>       
+            <div class="four wide field">
+                <input type="number" name="Número" placeholder="Número" min="0" value='{NUMERO}'>
+            </div>
+            <div class="four wide field">
+                <input type="number" name="Limite de pessoas" placeholder="Limite pessoas" min="2" value='{LIMITE_PESSOAS}'>
+            </div>
+        </div>
+    </div>
+    <div class="field">
+        <select class="ui dropdown" name="Tipo">
+            <option value="{TIPO}">Selecione tipo imóvel : {TIPO}</option>
+            <option value="Casa">Casa</option>
+            <option value="Apartamento">Apartamento</option>
+            <option value="Kitnet">Kitnet</option>
+            <option value="Quarto">Quarto</option>
+        </select>
+    </div>       
+    <div class="field">
+        <div class="four wide field">
+            Fotos do Imóvel
+            <input type="file" name="Foto Imovel" id="fileToUpload">            
+        </div>
+    </div>
+    <div class="field">
+        <label>Descrição</label>
+        <textarea name="Descrição">{DESCRICAO}</textarea>
+    </div>
+    <div>ATENÇÃO: Quando houver um locátario interessado nesse imóvel, não esqueça de ocupar uma vagas em meus imóveis! </div>
+    <br>
+    <button class="ui positive button" type="submit">Enviar</button>
+    {ALUGAR}{AVISO}
+</form>

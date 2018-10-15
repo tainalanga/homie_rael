@@ -1,0 +1,45 @@
+<!-- BEGIN BLOCK_MESSAGE -->
+{MESSAGE}
+<!-- END BLOCK_MESSAGE -->
+<form class="ui form"  enctype="multipart/form-data" method='POST'>
+    <div class="field">
+        <div class="fields">
+            
+            <div class="twelve wide field">
+                Nome
+                <input type="text" name="Nome" placeholder="nome" value='{NOME}'>
+                
+            </div><div class="twelve wide field">
+                Genero
+                <input type="text" name="Genero" placeholder="genero" value='{GENERO}'>
+                
+            </div>
+            <div class="twelve wide field">
+                Email
+                <input type="text" name="Email" placeholder="email" value='{EMAIL}'>
+            </div>
+            <div class="twelve wide field">
+                Senha
+                <input type="number" name="Senha" placeholder="Senha" min="0" value='{SENHA}'>
+            </div>
+        </div>
+    </div>
+    <div class="fields">
+
+        <div class="four wide field">
+            Data de Nascimento
+            <input type="date" name="Data_de_nascimento" placeholder="nascimento" min="0" value='{NASCIMENTO}'>
+        </div>
+
+        <div class="four wide field">
+            Telefone
+            <input type="number" name="Telefone" placeholder="telefone" value='{TELEFONE}'>
+        </div>
+
+    </div>
+    <div class="field">
+        <label>Preferencias</label>
+        <textarea name="Preferencias">{PREFERENCIAS}</textarea>
+    </div>
+    <button class="ui positive button" type="submit">Enviar</button>
+</form>
